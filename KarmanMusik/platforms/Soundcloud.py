@@ -3,7 +3,7 @@ from os import path
 
 from yt_dlp import YoutubeDL
 
-from PrimeMusic.utils.formatters import seconds_to_min
+from KarmanMusik.utils.formatters import seconds_to_min
 
 
 class SoundAPI:
