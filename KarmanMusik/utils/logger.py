@@ -1,6 +1,6 @@
 from config import LOG, LOG_GROUP_ID
-from PrimeMusic import app
-from PrimeMusic.utils.database import is_on_off
+from KarmanMusik import app
+from KarmanMusik.utils.database import is_on_off
 
 
 async def play_logs(message, streamtype):
