@@ -1,6 +1,6 @@
 from typing import Dict, List, Union
 
-from PrimeMusic.core.mongo import mongodb
+from KarmanMusik.core.mongo import mongodb
 
 queriesdb = mongodb.queries
 userdb = mongodb.userstats
