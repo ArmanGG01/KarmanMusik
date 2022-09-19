@@ -1,7 +1,7 @@
 import time
 import psutil
 
-from PrimeMusic.misc import _boot_
+from KarmanMusik.misc import _boot_
 from .formatters import get_readable_time
 
 
