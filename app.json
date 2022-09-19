@@ -6,7 +6,7 @@
     "python3",
     "telegram",
     "bot",
-    "Prime",
+    "Karman",
     "KarmanMusik",
     "telegram-bot",
     "pyrogram"
@@ -70,7 +70,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/Toni880/PrimeMusic",
+        "value": "https://github.com/ArmanGG01/KarmanMusik",
         "required": true
       },
       "UPSTREAM_BRANCH": {
