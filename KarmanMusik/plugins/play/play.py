@@ -10,21 +10,21 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from PrimeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from KarmanMusik import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from PrimeMusic.core.call import Prime
-from PrimeMusic.utils import seconds_to_min, time_to_seconds
-from PrimeMusic.utils.channelplay import get_channeplayCB
-from PrimeMusic.utils.database import is_video_allowed
-from PrimeMusic.utils.decorators.language import languageCB
-from PrimeMusic.utils.decorators.play import PlayWrapper
-from PrimeMusic.utils.formatters import formats
-from PrimeMusic.utils.inline.play import (livestream_markup,
+from KarmanMusik.core.call import Prime
+from KarmanMusik.utils import seconds_to_min, time_to_seconds
+from KarmanMusik.utils.channelplay import get_channeplayCB
+from KarmanMusik.utils.database import is_video_allowed
+from KarmanMusik.utils.decorators.language import languageCB
+from KarmanMusik.utils.decorators.play import PlayWrapper
+from KarmanMusik.utils.formatters import formats
+from KarmanMusik.utils.inline.play import (livestream_markup,
                                           playlist_markup,
                                           slider_markup, track_markup)
-from PrimeMusic.utils.inline.playlist import botplaylist_markup
-from PrimeMusic.utils.logger import play_logs
-from PrimeMusic.utils.stream.stream import stream
+from KarmanMusik.utils.inline.playlist import botplaylist_markup
+from KarmanMusik.utils.logger import play_logs
+from KarmanMusik.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
