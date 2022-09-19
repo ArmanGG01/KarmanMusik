@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from PrimeMusic.core.mongo import pymongodb
+from KarmanMusik.core.mongo import pymongodb
 
 from .logging import LOGGER
 
