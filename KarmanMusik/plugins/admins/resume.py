@@ -5,7 +5,7 @@ from config import BANNED_USERS
 from strings import get_command
 from KarmanMusik import app
 from KarmanMusik.core.call import Karman
-from PrimeMusic.utils.database import is_music_playing, music_on
+from KarmanMusik.utils.database import is_music_playing, music_on
 from KarmanMusik.utils.decorators import AdminRightsCheck
 
 # Commands
