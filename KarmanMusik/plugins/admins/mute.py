@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.core.call import Prime
-from PrimeMusic.utils.database import is_muted, mute_on
-from PrimeMusic.utils.decorators import AdminRightsCheck
+from KarmanMusik import app
+from KarmanMusik.core.call import Prime
+from KarmanMusik.utils.database import is_muted, mute_on
+from KarmanMusik.utils.decorators import AdminRightsCheck
 
 # Commands
 MUTE_COMMAND = get_command("MUTE_COMMAND")
