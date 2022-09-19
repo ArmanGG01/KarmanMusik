@@ -12,17 +12,17 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from PrimeMusic import YouTube, app
-from PrimeMusic.core.userbot import assistants
-from PrimeMusic.misc import SUDOERS, pymongodb
-from PrimeMusic.plugins import ALL_MODULES
-from PrimeMusic.utils.database import (get_global_tops,
+from KarmanMusik import YouTube, app
+from KarmanMusik.core.userbot import assistants
+from KarmanMusik.misc import SUDOERS, pymongodb
+from KarmanMusik.plugins import ALL_MODULES
+from KarmanMusik.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from PrimeMusic.utils.decorators.language import language, languageCB
-from PrimeMusic.utils.inline.stats import (back_stats_buttons,
+from KarmanMusik.utils.decorators.language import language, languageCB
+from KarmanMusik.utils.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,
