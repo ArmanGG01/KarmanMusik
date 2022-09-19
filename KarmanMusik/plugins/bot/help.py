@@ -5,11 +5,11 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string, helpers
-from PrimeMusic import app
-from PrimeMusic.misc import SUDOERS
-from PrimeMusic.utils import help_pannel
-from PrimeMusic.utils.database import get_lang, is_commanddelete_on
-from PrimeMusic.utils.decorators.language import (LanguageStart,
+from KarmanMusik import app
+from KarmanMusik.misc import SUDOERS
+from KarmanMusik.utils import help_pannel
+from KarmanMusik.utils.database import get_lang, is_commanddelete_on
+from KarmanMusik.utils.decorators.language import (LanguageStart,
                                                   languageCB)
 from PrimeMusic.utils.inline.help import (help_back_markup,
                                           private_help_panel)
