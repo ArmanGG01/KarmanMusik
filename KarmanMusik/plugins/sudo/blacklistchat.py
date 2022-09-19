@@ -8,7 +8,7 @@ from KarmanMusik.misc import SUDOERS
 from KarmanMusik.utils.database import (blacklist_chat,
                                        blacklisted_chats,
                                        whitelist_chat)
-from PrimeMusic.utils.decorators.language import language
+from KarmanMusik.utils.decorators.language import language
 
 # Commands
 
