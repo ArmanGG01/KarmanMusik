@@ -2,10 +2,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.misc import SUDOERS
-from PrimeMusic.utils.database import add_off, add_on
-from PrimeMusic.utils.decorators.language import language
+from KarmanMusik import app
+from KarmanMusik.misc import SUDOERS
+from KarmanMusik.utils.database import add_off, add_on
+from KarmanMusik.utils.decorators.language import language
 
 # Commands
 LOGGER_COMMAND = get_command("LOGGER_COMMAND")
