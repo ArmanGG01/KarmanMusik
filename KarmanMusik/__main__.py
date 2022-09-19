@@ -7,10 +7,10 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from PrimeMusic import LOGGER, app, userbot
-from PrimeMusic.core.call import Prime
-from PrimeMusic.plugins import ALL_MODULES
-from PrimeMusic.utils.database import get_banned_users, get_gbanned
+from KarmanMusik import LOGGER, app, userbot
+from KarmanMusik.core.call import Karman 
+from KarmanMusik.plugins import ALL_MODULES
+from KarmanMusik.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
@@ -28,7 +28,7 @@ async def init():
         and not config.STRING9
         and not config.STRING10
     ):
-        LOGGER("PrimeMusic").error(
+        LOGGER("KarmanMusik").error(
             "No Assistant Clients Vars Defined!.. Exiting Process."
         )
         return
@@ -36,7 +36,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("PrimeMusic").warning(
+        LOGGER("KarmanMusik").warning(
             "No Spotify Vars defined. Your bot won't be able to play spotify queries."
         )
     try:
@@ -55,26 +55,26 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Prime.start()
-    prime = await app.get_me()
-    PrimeMusic = prime.username
-    await userbot.one.send_message("primesupportgroup", f"@{PrimeMusic}")
+    await Karman.start()
+    karman = await app.get_me()
+    KarmanMusik = karman.username
+    await userbot.one.send_message("obrolansuar", f"@{KarmanMusik}")
     try:
-        await Prime.stream_call(
+        await Karman.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("PrimeMusic").error(
+        LOGGER("KarmanMusik").error(
             "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group"
         )
         sys.exit()
     except:
         pass
-    await Prime.decorators()
-    LOGGER("PrimeMusic").info("Prime Music Bot Started Successfully")
+    await Karman.decorators()
+    LOGGER("KarmanMusik").info("Karman Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("PrimeMusic").info("Stopping Prime Music Bot! GoodBye")
+    LOGGER("KarmanMusik").info("Stopping Karman Music Bot! GoodBye")
