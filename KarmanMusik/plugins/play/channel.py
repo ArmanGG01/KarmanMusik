@@ -3,9 +3,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.utils.database import set_cmode
-from PrimeMusic.utils.decorators.admins import AdminActual
+from KarmanMusik import app
+from KarmanMusik.utils.database import set_cmode
+from KarmanMusik.utils.decorators.admins import AdminActual
 
 ### Multi-Lang Commands
 CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")
