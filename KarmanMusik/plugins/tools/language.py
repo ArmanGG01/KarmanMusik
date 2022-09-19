@@ -4,9 +4,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string
-from PrimeMusic import app
-from PrimeMusic.utils.database import get_lang, set_lang
-from PrimeMusic.utils.decorators import (ActualAdminCB, language,
+from KarmanMusik import app
+from KarmanMusik.utils.database import get_lang, set_lang
+from KarmanMusik.utils.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available
