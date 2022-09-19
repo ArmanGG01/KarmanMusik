@@ -3,11 +3,11 @@ import asyncio
 from pyrogram.types import InlineKeyboardMarkup
 
 from strings import get_string
-from PrimeMusic.misc import db
-from PrimeMusic.utils.database import (get_active_chats, get_lang,
+from KarmanMusik.misc import db
+from KarmanMusik.utils.database import (get_active_chats, get_lang,
                                        is_music_playing)
-from PrimeMusic.utils.formatters import seconds_to_min
-from PrimeMusic.utils.inline import (stream_markup_timer,
+from KarmanMusik.utils.formatters import seconds_to_min
+from KarmanMusik.utils.inline import (stream_markup_timer,
                                      telegram_markup_timer)
 
 from ..admins.callback import wrong
