@@ -50,8 +50,8 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("PrimeMusic.plugins" + all_module)
-    LOGGER("PrimeMusic.plugins").info(
+        importlib.import_module("KarmanMusik.plugins" + all_module)
+    LOGGER("KarmanMusik.plugins").info(
         "Successfully Imported Modules "
     )
     await userbot.start()
