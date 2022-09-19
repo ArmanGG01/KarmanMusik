@@ -5,10 +5,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.core.call import Prime
-from PrimeMusic.utils import bot_sys_stats
-from PrimeMusic.utils.decorators.language import language
+from KarmanMusik import app
+from KarmanMusik.core.call import Karman
+from KarmanMusik.utils import bot_sys_stats
+from KarmanMusik.utils.decorators.language import language
 
 ### Commands
 PING_COMMAND = get_command("PING_COMMAND")
@@ -27,7 +27,7 @@ async def ping_com(client, message: Message, _):
         caption=_["ping_1"],
     )
     start = datetime.now()
-    pytgping = await Prime.ping()
+    pytgping = await Karman.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(
