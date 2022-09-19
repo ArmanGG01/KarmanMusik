@@ -7,8 +7,8 @@
 #
 # All rights reserved.
 
-from PrimeMusic import app
-from PrimeMusic.utils.database import get_cmode
+from KarmanMusik import app
+from KarmanMusik.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
