@@ -11,7 +11,7 @@ from KarmanMusik.misc import db
 from KarmanMusik.utils.database import get_authuser_names, get_cmode
 from KarmanMusik.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
-from PrimeMusic.utils.formatters import alpha_to_int
+from KarmanMusik.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
