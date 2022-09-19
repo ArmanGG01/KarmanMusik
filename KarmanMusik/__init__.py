@@ -1,8 +1,8 @@
-from PrimeMusic.core.bot import PrimeBot
-from PrimeMusic.core.dir import dirr
-from PrimeMusic.core.git import git
-from PrimeMusic.core.userbot import Userbot
-from PrimeMusic.misc import dbb, heroku, sudo
+from KarmanMusik.core.bot import KarmanBot
+from KarmanMusik.core.dir import dirr
+from KarmanMusik.core.git import git
+from KarmanMusik.core.userbot import Userbot
+from KarmanMusik.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
 
@@ -22,7 +22,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = PrimeBot()
+app = KarmanBot()
 
 # Assistant Client
 userbot = Userbot()
