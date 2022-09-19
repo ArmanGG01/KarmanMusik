@@ -3,12 +3,12 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.utils.database import (delete_authuser, get_authuser,
+from KarmanMusik import app
+from KarmanMusik.utils.database import (delete_authuser, get_authuser,
                                        get_authuser_names,
                                        save_authuser)
-from PrimeMusic.utils.decorators import AdminActual, language
-from PrimeMusic.utils.formatters import int_to_alpha
+from KarmanMusik.utils.decorators import AdminActual, language
+from KarmanMusik.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")
