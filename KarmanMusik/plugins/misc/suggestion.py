@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 import config
 from config import clean
 from strings import get_string
-from PrimeMusic import app
-from PrimeMusic.utils.database import (
+from KarmanMusik import app
+from KarmanMusik.utils.database import (
   get_lang,
   get_served_chats,
   get_private_served_chats,
