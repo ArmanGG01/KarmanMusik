@@ -15,13 +15,13 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.misc import HAPP, SUDOERS, XCB
-from PrimeMusic.utils.database import (get_active_chats,
+from KarmanMusik import app
+from KarmanMusik.misc import HAPP, SUDOERS, XCB
+from KarmanMusik.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
-from PrimeMusic.utils.decorators.language import language
-from PrimeMusic.utils.pastebin import Primebin
+from KarmanMusik.utils.decorators.language import language
+from KarmanMusik.utils.pastebin import Primebin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
