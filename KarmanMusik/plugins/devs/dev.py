@@ -11,8 +11,8 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from PrimeMusic import app
-from PrimeMusic.misc import SUDOERS
+from KarmanMusik import app
+from KarmanMusik.misc import SUDOERS
 
 
 async def aexec(code, client, message):
