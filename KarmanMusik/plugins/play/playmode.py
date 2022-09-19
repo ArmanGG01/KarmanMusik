@@ -3,11 +3,11 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.utils.database import (get_playmode, get_playtype,
+from KarmanMusik import app
+from KarmanMusik.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from PrimeMusic.utils.decorators import language
-from PrimeMusic.utils.inline.settings import playmode_users_markup
+from KarmanMusik.utils.decorators import language
+from KarmanMusik.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
