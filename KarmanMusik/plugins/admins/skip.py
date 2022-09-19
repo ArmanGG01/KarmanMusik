@@ -12,7 +12,7 @@ from KarmanMusik.utils.decorators import AdminRightsCheck
 from KarmanMusik.utils.inline.play import (stream_markup,
                                           telegram_markup)
 from KarmanMusik.utils.stream.autoclear import auto_clean
-from PrimeMusic.utils.thumbnails import gen_thumb
+from KarmanMusik.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
