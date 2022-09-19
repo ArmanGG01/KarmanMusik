@@ -4,14 +4,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from PrimeMusic import app
-from PrimeMusic.utils.database import (get_global_tops,
+from KarmanMusik import app
+from KarmanMusik.utils.database import (get_global_tops,
                                        get_particulars, get_userss)
-from PrimeMusic.utils.decorators.language import languageCB
-from PrimeMusic.utils.inline.playlist import (botplaylist_markup,
+from KarmanMusik.utils.decorators.language import languageCB
+from KarmanMusik.utils.inline.playlist import (botplaylist_markup,
                                               failed_top_markup,
                                               top_play_markup)
-from PrimeMusic.utils.stream.stream import stream
+from KarmanMusik.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 
