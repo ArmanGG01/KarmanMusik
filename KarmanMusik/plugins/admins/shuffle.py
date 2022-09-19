@@ -5,9 +5,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.misc import db
-from PrimeMusic.utils.decorators import AdminRightsCheck
+from KarmanMusik import app
+from KarmanMusik.misc import db
+from KarmanMusik.utils.decorators import AdminRightsCheck
 
 # Commands
 SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
