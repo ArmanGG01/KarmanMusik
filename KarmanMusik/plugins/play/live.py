@@ -1,10 +1,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from PrimeMusic import YouTube, app
-from PrimeMusic.utils.channelplay import get_channeplayCB
-from PrimeMusic.utils.decorators.language import languageCB
-from PrimeMusic.utils.stream.stream import stream
+from KarmanMusik import YouTube, app
+from KarmanMusik.utils.channelplay import get_channeplayCB
+from KarmanMusik.utils.decorators.language import languageCB
+from KarmanMusik.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
