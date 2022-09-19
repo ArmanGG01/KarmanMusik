@@ -9,18 +9,18 @@ import config
 from config import BANNED_USERS
 from config.config import OWNER_ID
 from strings import get_command, get_string
-from PrimeMusic import Telegram, YouTube, app
-from PrimeMusic.misc import SUDOERS
-from PrimeMusic.plugins.play.playlist import del_plist_msg
-from PrimeMusic.plugins.sudo.sudoers import sudoers_list
-from PrimeMusic.utils.database import (add_served_chat,
+from KarmanMusik import Telegram, YouTube, app
+from KarmanMusik.misc import SUDOERS
+from KarmanMusik.plugins.play.playlist import del_plist_msg
+from KarmanMusik.plugins.sudo.sudoers import sudoers_list
+from KarmanMusik.utils.database import (add_served_chat,
                                        add_served_user,
                                        blacklisted_chats,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from PrimeMusic.utils.decorators.language import LanguageStart
-from PrimeMusic.utils.inline import (help_pannel, private_panel,
+from KarmanMusik.utils.decorators.language import LanguageStart
+from KarmanMusik.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
