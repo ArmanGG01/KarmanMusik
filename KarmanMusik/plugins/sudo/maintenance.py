@@ -2,12 +2,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command, get_string
-from PrimeMusic import app
-from PrimeMusic.misc import SUDOERS
-from PrimeMusic.utils.database import (get_lang, is_maintenance,
+from KarmanMusik import app
+from KarmanMusik.misc import SUDOERS
+from KarmanMusik.utils.database import (get_lang, is_maintenance,
                                        maintenance_off,
                                        maintenance_on)
-from PrimeMusic.utils.decorators.language import language
+from KarmanMusik.utils.decorators.language import language
 
 # Commands
 MAINTENANCE_COMMAND = get_command("MAINTENANCE_COMMAND")
