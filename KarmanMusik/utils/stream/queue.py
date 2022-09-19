@@ -2,7 +2,7 @@ from typing import Union
 
 from config import autoclean, chatstats, userstats
 from config.config import time_to_seconds
-from PrimeMusic.misc import db
+from KarmanMusik.misc import db
 
 
 async def put_queue(
