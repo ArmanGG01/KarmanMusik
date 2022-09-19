@@ -8,16 +8,16 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from strings import get_command
-from PrimeMusic import Carbon, YouTube, app
-from PrimeMusic.utils.database import (delete_playlist, get_playlist,
+from KarmanMusik import Carbon, YouTube, app
+from KarmanMusik.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
-from PrimeMusic.utils.decorators.language import language, languageCB
-from PrimeMusic.utils.inline.playlist import (botplaylist_markup,
+from KarmanMusik.utils.decorators.language import language, languageCB
+from KarmanMusik.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from PrimeMusic.utils.pastebin import Primebin
-from PrimeMusic.utils.stream.stream import stream
+from KarmanMusik.utils.pastebin import Primebin
+from KarmanMusik.utils.stream.stream import stream
 
 # Command
 PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
