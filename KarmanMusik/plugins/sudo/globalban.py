@@ -7,16 +7,16 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.misc import SUDOERS
-from PrimeMusic.utils import get_readable_time
-from PrimeMusic.utils.database import (add_banned_user,
+from KarmanMusik import app
+from KarmanMusik.misc import SUDOERS
+from KarmanMusik.utils import get_readable_time
+from KarmanMusik.utils.database import (add_banned_user,
                                        get_banned_count,
                                        get_banned_users,
                                        get_served_chats,
                                        is_banned_user,
                                        remove_banned_user)
-from PrimeMusic.utils.decorators.language import language
+from KarmanMusik.utils.decorators.language import language
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")
