@@ -2,9 +2,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import adminlist
 from strings import get_string
-from PrimeMusic import app
-from PrimeMusic.misc import SUDOERS
-from PrimeMusic.utils.database import (get_authuser_names, get_cmode,
+from KarmanMusik import app
+from KarmanMusik.misc import SUDOERS
+from KarmanMusik.utils.database import (get_authuser_names, get_cmode,
                                        get_lang, is_active_chat,
                                        is_commanddelete_on,
                                        is_maintenance,
