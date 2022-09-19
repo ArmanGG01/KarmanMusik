@@ -1,4 +1,4 @@
-# Prime Music Bot Configs
+# Karman Musik Bot Configs
 
 Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
 
@@ -15,7 +15,7 @@ Config vars are basically the variables which configure or modify bot to functio
 5. `LOG_GROUP_ID` : You'll need a Private Group ID for this. Supergroup Needed with id starting from -100 
 6. `MUSIC_BOT_NAME` : A name for your Music bot.
 7. `OWNER_ID` : Your Owner ID for managing your bot.
-8. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
+8. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [@KarmanStringBot](http://t.me/KarString_bot) in Telegram.
 
 
 ## Non-Mandatory Vars
@@ -104,16 +104,3 @@ Config vars are basically the variables which configure or modify bot to functio
 12. `SPOTIFY_ALBUM_IMG_URL` : This image comes when someone plays Spotify album via link in inline mode. 
 13. `SPOTIFY_PLAYLIST_IMG_URL` : This image comes when someone plays Spotify album via link in inline mode. 
 
-## Multi Assistant Mode
-
-- You can use upto 10 Assistant Clients ( allowing your bot to atleast work in 2000-2500 chats at a time )
-
-1. `STRING_SESSION2` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
-2. `STRING_SESSION3` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
-3. `STRING_SESSION4` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
-4. `STRING_SESSION5` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
-5. `STRING_SESSION6` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
-6. `STRING_SESSION7` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
-7. `STRING_SESSION8` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
-8. `STRING_SESSION9` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
-9. `STRING_SESSION10` : Pyrogram Session Needed, Generate string from [@PrimeStringBot](http://t.me/PrimeStringBot) in Telegram.
