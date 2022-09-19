@@ -6,8 +6,8 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
 from config import (BANNED_USERS, CLEANMODE_DELETE_MINS,
                     MUSIC_BOT_NAME, OWNER_ID)
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.utils.database import (add_nonadmin_chat,
+from KarmanMusik import app
+from KarmanMusik.utils.database import (add_nonadmin_chat,
                                        cleanmode_off, cleanmode_on,
                                        commanddelete_off,
                                        commanddelete_on,
@@ -24,13 +24,13 @@ from PrimeMusic.utils.database import (add_nonadmin_chat,
                                        save_video_bitrate,
                                        set_playmode, set_playtype,
                                        suggestion_off, suggestion_on)
-from PrimeMusic.utils.decorators.admins import ActualAdminCB
-from PrimeMusic.utils.decorators.language import language, languageCB
-from PrimeMusic.utils.inline.settings import (
+from KarmanMusik.utils.decorators.admins import ActualAdminCB
+from KarmanMusik.utils.decorators.language import language, languageCB
+from KarmanMusik.utils.inline.settings import (
     audio_quality_markup, auth_users_markup,
     cleanmode_settings_markup, playmode_users_markup, setting_markup,
     video_quality_markup)
-from PrimeMusic.utils.inline.start import private_panel
+from KarmanMusik.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
