@@ -1,5 +1,5 @@
 {
-    "name": "Prime Music",
+    "name": "Karman Musik",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
     "logo": "https://telegra.ph/file/ead703562aa39dafa9347.jpg",
     "keywords": [
@@ -7,7 +7,7 @@
     "telegram",
     "bot",
     "Prime",
-    "PrimeMusic",
+    "KarmanMusik",
     "telegram-bot",
     "pyrogram"
     ],
