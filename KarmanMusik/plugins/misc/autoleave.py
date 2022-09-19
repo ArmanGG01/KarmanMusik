@@ -2,9 +2,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from PrimeMusic import app
-from PrimeMusic.core.call import Prime, autoend
-from PrimeMusic.utils.database import (get_client, is_active_chat,
+from KarmanMusik import app
+from KarmanMusik.core.call import Karman, autoend
+from KarmanMusik.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -27,7 +27,7 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOG_GROUP_ID
-                                and chat_id != -1001578091827
+                                and chat_id != -1001681232303
                                 and chat_id != -1001437376278
                             ):
                                 if not await is_active_chat(chat_id):
@@ -58,7 +58,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Prime.stop_stream(chat_id)
+                    await Karman.stop_stream(chat_id)
                 except:
                     continue
                 try:
