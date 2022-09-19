@@ -9,8 +9,8 @@ from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from PrimeMusic.utils.database import is_on_off
-from PrimeMusic.utils.formatters import time_to_seconds
+from KarmanMusik.utils.database import is_on_off
+from KarmanMusik.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
