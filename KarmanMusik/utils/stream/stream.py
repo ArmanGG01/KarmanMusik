@@ -5,20 +5,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from PrimeMusic import Carbon, YouTube, app
-from PrimeMusic.core.call import Prime
-from PrimeMusic.misc import db
-from PrimeMusic.utils.database import (add_active_chat,
+from KarmanMusik import Carbon, YouTube, app
+from KarmanMusik.core.call import Karman
+from KarmanMusik.misc import db
+from KarmanMusik.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        is_active_chat,
                                        is_video_allowed, music_on)
-from PrimeMusic.utils.exceptions import AssistantErr
-from PrimeMusic.utils.inline.play import (stream_markup,
+from KarmanMusik.utils.exceptions import AssistantErr
+from KarmanMusik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from PrimeMusic.utils.inline.playlist import close_markup
-from PrimeMusic.utils.pastebin import Primebin
-from PrimeMusic.utils.stream.queue import put_queue, put_queue_index
-from PrimeMusic.utils.thumbnails import gen_thumb
+from KarmanMusik.utils.inline.playlist import close_markup
+from KarmanMusik.utils.pastebin import Primebin
+from KarmanMusik.utils.stream.queue import put_queue, put_queue_index
+from KarmanMusik.utils.thumbnails import gen_thumb
 
 
 async def stream(
@@ -40,7 +40,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await Prime.force_stop_stream(chat_id)
+        await Karman.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -89,7 +89,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await Prime.join_call(
+                await karman.join_call(
                     chat_id, original_chat_id, file_path, video=status
                 )
                 await put_queue(
@@ -170,7 +170,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Prime.join_call(
+            await Karman.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -224,7 +224,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Prime.join_call(
+            await Karman.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
             await put_queue(
@@ -278,7 +278,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Prime.join_call(
+            await Karman.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -339,7 +339,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Prime.join_call(
+            await Karman.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -391,7 +391,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Prime.join_call(
+            await Karman.join_call(
                 chat_id,
                 original_chat_id,
                 link,
