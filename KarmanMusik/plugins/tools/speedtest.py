@@ -2,8 +2,8 @@ import asyncio
 import speedtest
 from pyrogram import filters
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.misc import SUDOERS
+from KarmanMusik import app
+from KarmanMusik.misc import SUDOERS
 
 # Commands
 SPEEDTEST_COMMAND = get_command("SPEEDTEST_COMMAND")
