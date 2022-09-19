@@ -27,9 +27,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from PrimeMusic import LOGGER, YouTube, app
-from PrimeMusic.misc import db
-from PrimeMusic.utils.database import (add_active_chat,
+from KarmanMusik import LOGGER, YouTube, app
+from KarmanMusik.misc import db
+from KarmanMusik.utils.database import (add_active_chat,
                                        add_active_video_chat,
                                        get_assistant,
                                        get_audio_bitrate, get_lang,
@@ -39,11 +39,11 @@ from PrimeMusic.utils.database import (add_active_chat,
                                        remove_active_chat,
                                        remove_active_video_chat,
                                        set_loop)
-from PrimeMusic.utils.exceptions import AssistantErr
-from PrimeMusic.utils.inline.play import (stream_markup,
+from KarmanMusik.utils.exceptions import AssistantErr
+from KarmanMusik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from PrimeMusic.utils.stream.autoclear import auto_clean
-from PrimeMusic.utils.thumbnails import gen_thumb
+from KarmanMusik.utils.stream.autoclear import auto_clean
+from KarmanMusik.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
