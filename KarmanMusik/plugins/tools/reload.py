@@ -5,11 +5,11 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.core.call import Prime
-from PrimeMusic.misc import db
-from PrimeMusic.utils.database import get_authuser_names, get_cmode
-from PrimeMusic.utils.decorators import (ActualAdminCB, AdminActual,
+from KarmanMusik import app
+from KarmanMusik.core.call import Karman
+from KarmanMusik.misc import db
+from KarmanMusik.utils.database import get_authuser_names, get_cmode
+from KarmanMusik.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
 from PrimeMusic.utils.formatters import alpha_to_int
 
@@ -60,7 +60,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Prime.stop_stream(message.chat.id)
+        await Karman.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -71,7 +71,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Prime.stop_stream(chat_id)
+            await Karman.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text(
