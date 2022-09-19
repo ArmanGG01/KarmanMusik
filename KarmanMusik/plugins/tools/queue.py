@@ -9,14 +9,14 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.misc import db
-from PrimeMusic.utils import (Primebin, get_channeplayCB,
+from KarmanMusik import app
+from KarmanMusik.misc import db
+from KarmanMusik.utils import (Primebin, get_channeplayCB,
                               seconds_to_min)
-from PrimeMusic.utils.database import (get_cmode, is_active_chat,
+from KarmanMusik.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from PrimeMusic.utils.decorators.language import language, languageCB
-from PrimeMusic.utils.inline import queue_back_markup, queue_markup
+from KarmanMusik.utils.decorators.language import language, languageCB
+from KarmanMusik.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
