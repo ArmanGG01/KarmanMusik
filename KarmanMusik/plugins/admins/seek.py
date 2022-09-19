@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from PrimeMusic import YouTube, app
-from PrimeMusic.core.call import Prime
-from PrimeMusic.misc import db
-from PrimeMusic.utils import AdminRightsCheck, seconds_to_min
+from KarmanMusik import YouTube, app
+from KarmanMusik.core.call import Karman
+from KarmanMusik.misc import db
+from KarmanMusik.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
@@ -61,7 +61,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_30"])
     try:
-        await Prime.seek_stream(
+        await Karman.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
