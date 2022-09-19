@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.utils.database.db_memory import (get_loop,
+from KarmanMusik import app
+from KarmanMusik.utils.database.db_memory import (get_loop,
                                                       set_loop)
-from PrimeMusic.utils.decorators import AdminRightsCheck
+from KarmanMusik.utils.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")
