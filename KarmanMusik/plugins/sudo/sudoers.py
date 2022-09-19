@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID
 from strings import get_command
-from PrimeMusic import app
-from PrimeMusic.misc import SUDOERS
-from PrimeMusic.utils.database import add_sudo, remove_sudo
-from PrimeMusic.utils.decorators.language import language
+from KarmanMusik import app
+from KarmanMusik.misc import SUDOERS
+from KarmanMusik.utils.database import add_sudo, remove_sudo
+from KarmanMusik.utils.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")
