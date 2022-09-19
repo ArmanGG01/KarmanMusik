@@ -4,14 +4,14 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from PrimeMusic import YouTube, app
-from PrimeMusic.core.call import Prime
-from PrimeMusic.misc import db
-from PrimeMusic.utils.database import get_loop
-from PrimeMusic.utils.decorators import AdminRightsCheck
-from PrimeMusic.utils.inline.play import (stream_markup,
+from KarmanMusik import YouTube, app
+from KarmanMusik.core.call import Karman
+from KarmanMusik.misc import db
+from KarmanMusik.utils.database import get_loop
+from KarmanMusik.utils.decorators import AdminRightsCheck
+from KarmanMusik.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from PrimeMusic.utils.stream.autoclear import auto_clean
+from KarmanMusik.utils.stream.autoclear import auto_clean
 from PrimeMusic.utils.thumbnails import gen_thumb
 
 # Commands
@@ -60,7 +60,7 @@ async def skip(cli, message: Message, _, chat_id):
                                             message.from_user.first_name
                                         )
                                     )
-                                    await Prime.stop_stream(chat_id)
+                                    await Karman.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -87,7 +87,7 @@ async def skip(cli, message: Message, _, chat_id):
                     _["admin_10"].format(message.from_user.first_name)
                 )
                 try:
-                    return await Prime.stop_stream(chat_id)
+                    return await Karman.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -95,7 +95,7 @@ async def skip(cli, message: Message, _, chat_id):
                 await message.reply_text(
                     _["admin_10"].format(message.from_user.first_name)
                 )
-                return await Prime.stop_stream(chat_id)
+                return await Karman.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -111,7 +111,7 @@ async def skip(cli, message: Message, _, chat_id):
                 _["admin_11"].format(title)
             )
         try:
-            await Prime.skip_stream(chat_id, link, video=status)
+            await Karman.skip_stream(chat_id, link, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -140,7 +140,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await mystic.edit_text(_["call_9"])
         try:
-            await Prime.skip_stream(chat_id, file_path, video=status)
+            await Karman.skip_stream(chat_id, file_path, video=status)
         except Exception:
             return await mystic.edit_text(_["call_9"])
         button = stream_markup(_, videoid, chat_id)
@@ -158,7 +158,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Prime.skip_stream(chat_id, videoid, video=status)
+            await Karman.skip_stream(chat_id, videoid, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -171,7 +171,7 @@ async def skip(cli, message: Message, _, chat_id):
         db[chat_id][0]["markup"] = "tg"
     else:
         try:
-            await Prime.skip_stream(chat_id, queued, video=status)
+            await Karman.skip_stream(chat_id, queued, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         if videoid == "telegram":
