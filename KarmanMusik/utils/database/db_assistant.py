@@ -1,7 +1,7 @@
 import random
 
-from PrimeMusic import userbot
-from PrimeMusic.core.mongo import mongodb
+from KarmanMusik import userbot
+from KarmanMusik.core.mongo import mongodb
 
 db = mongodb.assistants
 
