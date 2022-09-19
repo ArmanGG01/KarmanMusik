@@ -11,7 +11,7 @@ from KarmanMusik.utils import help_pannel
 from KarmanMusik.utils.database import get_lang, is_commanddelete_on
 from KarmanMusik.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from PrimeMusic.utils.inline.help import (help_back_markup,
+from KarmanMusik.utils.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command
