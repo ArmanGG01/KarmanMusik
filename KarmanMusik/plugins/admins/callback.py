@@ -230,7 +230,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_10"].format(mention)
                 )
                 try:
-                    return await Prime.stop_stream(chat_id)
+                    return await Karman.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -259,7 +259,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_11"].format(title)
                 )
             try:
-                await Prime.skip_stream(chat_id, link, video=status)
+                await Karman.skip_stream(chat_id, link, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -291,7 +291,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await mystic.edit_text(_["call_9"])
             try:
-                await Prime.skip_stream(
+                await Karman.skip_stream(
                     chat_id, file_path, video=status
                 )
             except Exception:
@@ -312,7 +312,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await Prime.skip_stream(
+                await Karman.skip_stream(
                     chat_id, videoid, video=status
                 )
             except Exception:
