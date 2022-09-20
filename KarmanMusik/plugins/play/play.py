@@ -12,7 +12,7 @@ from config import BANNED_USERS, lyrical
 from strings import get_command
 from KarmanMusik import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from KarmanMusik.core.call import Prime
+from KarmanMusik.core.call import Karman
 from KarmanMusik.utils import seconds_to_min, time_to_seconds
 from KarmanMusik.utils.channelplay import get_channeplayCB
 from KarmanMusik.utils.database import is_video_allowed
@@ -326,7 +326,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Prime.stream_call(url)
+                await Karman.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "There's an issue with the bot. Please report it to my owner and ask them to check logger group."
