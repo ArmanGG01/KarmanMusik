@@ -590,7 +590,7 @@ async def anonymous_check(client, CallbackQuery):
 
 
 @app.on_callback_query(
-    filters.regex("PrimePlaylists") & ~BANNED_USERS
+    filters.regex("KarmanPlaylists") & ~BANNED_USERS
 )
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
