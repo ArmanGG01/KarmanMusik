@@ -7,7 +7,7 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
 from KarmanMusik import YouTube, app
-from KarmanMusik.core.call import Prime
+from KarmanMusik.core.call import Karman
 from KarmanMusik.misc import SUDOERS, db
 from KarmanMusik.utils.database import (is_active_chat,
                                        is_music_playing, is_muted,
