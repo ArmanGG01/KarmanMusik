@@ -75,8 +75,8 @@ node(){
 
 repo(){
 	# Get git repo if the installer is runned standalone
-	[[ ! "PrimeMusic" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
-	git clone https://github.com/Toni880/PrimeMusic &&  cd PrimeMusic
+	[[ ! "KarmanMusik" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
+	git clone https://github.com/ArmanGG01/KarmanMusin &&  cd KarmanMusik
 }
 
 
@@ -90,7 +90,7 @@ installation(){
 }
 
 clear
-pprint "Welcome to Prime Music Bot Setup Installer\n\n"
+pprint "Welcome to Karman Musik Bot Setup Installer\n\n"
 pprint "If you see any error during Installation Process, Please refer to these files for logs: "
 pprint "\nFor node js errors , Checkout nodelog.txt"
 pprint "\nFor pypi packages errors , Checkout pypilog.txt"
@@ -103,7 +103,7 @@ packages
 node
 repo
 installation
-pprint "\n\n\n\n\nPrime Music Bot Installation Completed!" "cgreen"
+pprint "\n\n\n\n\nKarman Musik Bot Installation Completed!" "cgreen"
 sleep 4
 clear
 
