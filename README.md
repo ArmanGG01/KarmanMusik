@@ -2,7 +2,7 @@
 
 # Prime Music Bot <img src="https://img.shields.io/github/v/release/ArmanGG01/KarmanMusik?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
-[Prime Music Bot](https://github.com/Toni880/PrimeMusic) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
+[Karman Music Bot](https://github.com/ArmanGG01/KarmanMusik) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
 
 * Youtube, Soundcloud, Apple Music, Spotify, Resso and Telegram Audios & Videos support.
 * Written from scratch, making it stable and less crashes.
