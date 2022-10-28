@@ -76,7 +76,7 @@ node(){
 repo(){
 	# Get git repo if the installer is runned standalone
 	[[ ! "KarmanMusik" == $(basename -s .git `git config --get remote.origin.url`) ]] &&
-	git clone https://github.com/ArmanGG01/KarmanMusik &&  cd KarmanMusik
+	git clone https://github.com/Toni880/PrimeMusic &&  cd PrimeMusic
 }
 
 
