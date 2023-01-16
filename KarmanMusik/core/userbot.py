@@ -78,7 +78,7 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("Karc0de")
+                await self.one.join_chat("Pyr0kar")
                 await self.one.join_chat("obrolansuar")
             except:
                 pass
@@ -108,7 +108,7 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("Karc0de")
+                await self.two.join_chat("Pyr0kar")
                 await self.two.join_chat("obrolansuar")
             except:
                 pass
@@ -138,7 +138,7 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("Karc0de")
+                await self.three.join_chat("Pyr0kar")
                 await self.three.join_chat("obrolansuar")
             except:
                 pass
@@ -168,7 +168,7 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("Karc0de")
+                await self.four.join_chat("Pyr0kar")
                 await self.four.join_chat("obrolansuar")
             except:
                 pass
@@ -198,7 +198,7 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("Karc0de")
+                await self.five.join_chat("Pyr0kar")
                 await self.five.join_chat("obrolansuar")
             except:
                 pass
@@ -228,7 +228,7 @@ class Userbot(Client):
         if config.STRING6:
             await self.six.start()
             try:
-                await self.six.join_chat("Karc0de")
+                await self.six.join_chat("Pyr0kar")
                 await self.six.join_chat("obrolansuar")
             except:
                 pass
@@ -258,7 +258,7 @@ class Userbot(Client):
         if config.STRING7:
             await self.seven.start()
             try:
-                await self.seven.join_chat("Karc0de")
+                await self.seven.join_chat("Pyr0kar")
                 await self.seven.join_chat("obrolansuar")
             except:
                 pass
@@ -288,7 +288,7 @@ class Userbot(Client):
         if config.STRING8:
             await self.eight.start()
             try:
-                await self.eight.join_chat("Karc0de")
+                await self.eight.join_chat("Pyr0kar")
                 await self.eight.join_chat("obrolansuar")
             except:
                 pass
@@ -318,7 +318,7 @@ class Userbot(Client):
         if config.STRING9:
             await self.nine.start()
             try:
-                await self.nine.join_chat("Karc0de")
+                await self.nine.join_chat("Pyr0kar")
                 await self.nine.join_chat("obrolansuar")
             except:
                 pass
@@ -348,7 +348,7 @@ class Userbot(Client):
         if config.STRING10:
             await self.ten.start()
             try:
-                await self.ten.join_chat("KarC0de")
+                await self.ten.join_chat("Pyr0kar")
                 await self.ten.join_chat("obrolansuar")
             except:
                 pass
