@@ -9,6 +9,7 @@ heroku3
 lyricsgenius
 motor
 pillow
+pyrogram
 psutil
 py-tgcalls==0.9.1
 pykeyboard
