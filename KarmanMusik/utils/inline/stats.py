@@ -4,7 +4,7 @@ from KarmanMusik import app
 
 
 def back_stats_markup(_):
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
@@ -18,11 +18,10 @@ def back_stats_markup(_):
             ],
         ]
     )
-    return upl
 
 
 def overallback_stats_markup(_):
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
@@ -36,7 +35,6 @@ def overallback_stats_markup(_):
             ],
         ]
     )
-    return upl
 
 
 def get_stats_markup(_, status):
@@ -56,7 +54,7 @@ def get_stats_markup(_, status):
             callback_data="close",
         ),
     ]
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
@@ -77,7 +75,6 @@ def get_stats_markup(_, status):
             sudo if status else not_sudo,
         ]
     )
-    return upl
 
 
 def stats_buttons(_, status):
@@ -97,7 +94,7 @@ def stats_buttons(_, status):
             callback_data="TopOverall s",
         ),
     ]
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         [
             sudo if status else not_sudo,
             [
@@ -108,11 +105,10 @@ def stats_buttons(_, status):
             ],
         ]
     )
-    return upl
 
 
 def back_stats_buttons(_):
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
@@ -126,11 +122,10 @@ def back_stats_buttons(_):
             ],
         ]
     )
-    return upl
 
 
 def top_ten_stats_markup(_):
-    upl = InlineKeyboardMarkup(
+    return InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
@@ -164,4 +159,3 @@ def top_ten_stats_markup(_):
             ],
         ]
     )
-    return upl

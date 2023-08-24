@@ -2,7 +2,7 @@ from pyrogram.types import InlineKeyboardButton
 
 
 def song_markup(_, vidid):
-    buttons = [
+    return [
         [
             InlineKeyboardButton(
                 text=_["SG_B_2"],
@@ -19,4 +19,3 @@ def song_markup(_, vidid):
             ),
         ],
     ]
-    return buttons
